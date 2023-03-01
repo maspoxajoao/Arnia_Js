@@ -1,9 +1,9 @@
 let io = require("../../io");
 
-let N = 0
-let i = 0
-while (i < 3 ) {
-    i = i + 1
-    console.log(i)
-    
+let n = 0;
+console.log("Digite um numeor")
+n = io.read()
+while (n < 10) {
+  n = n + 1;
+  console.log(n);
 }
