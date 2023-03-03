@@ -1,15 +1,12 @@
-//Soma os numeros de 1 ate n, sendo n o numeor digitado pelo ususario
-
 let io = require("../../io");
 
-let n = 0;
-let acumulador = 0;
-let contador = 1;
+let count = 0;
 
-console.log("Digite um numeor");
-n = io.read();
-while (contador <= n) {
-  acumulador = acumulador + contador;
-  contador = contador + 1;
+for (let i = 1; i <= 10; i++ ) {
+    io.write(`Digite o nome da ${i}ª pessoa:`);
+    let nome = io.read()
+    if(nome === "maria"){
+        count++
+    }
 }
-console.log(acumulador);
+io.write(`Foram digitados 10 nomes, sendo ${count} chamando maria`)

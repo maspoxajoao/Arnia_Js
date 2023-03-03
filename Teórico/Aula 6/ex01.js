@@ -1,7 +1,6 @@
 let io = require("../../io");
 
-let num = 0;
-while (num < 3) {
-  console.log("Brasil");
-  num = num + 1;
+for(let i = 0 ; i < 100; i= i + 1){
+    io.write("joão victor")
 }
+io.write("obrigado")
