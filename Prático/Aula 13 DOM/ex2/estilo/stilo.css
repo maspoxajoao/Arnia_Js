@@ -1,16 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #2b2b2a;
 }
 
-.titulo{
+.titulo {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.secao{
+.secao {
     display: flex;
     align-content: space-between;
     gap: 20px;
@@ -19,17 +18,13 @@
     margin-bottom: 20px;
 }
 
-.p3{
+.p3 {
     font-size: 14px;
     font-weight: 400;
 }
 
-body {
-    background-color: white;
-    color: black;
-  }
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
 
+body.Dark-mode {
+    background-color: black;
+    color: #fff
+}

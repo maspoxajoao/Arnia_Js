@@ -12,32 +12,53 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
       />
-      <link rel="stylesheet" href="estilo/stilo.css">
+      <link rel="stylesheet" href="estilo/stilo.css" />
       <script>
-        function main(){
-        const elemento = document.getElementById("title")
-        elemento.className = "titulo"
-        const sec = document.getElementById("section")
-        sec.className = "secao"
-        const p3 = document.getElementById("thirdParagraph")
-        p3.className = "p3"
-    }
+        function main() {
+          const elemento = document.getElementById("title");
+          elemento.className = "titulo";
+          const sec = document.getElementById("section");
+          sec.className = "secao";
+          const p3 = document.getElementById("thirdParagraph");
+          p3.className = "p3";
+        }
 
-    function DarkMode(){
-        const body = document.querySelector('body');
-        body.classList.toggle('dark-mode');
-    }
+        function Darkmode() {
+          var body = document.querySelector("body");
+          body.classList.toggle("Dark-mode");
+        }
+        function listarAtributos() {
+          const firstParagraph = document.getElementById("firstParagraph");
+          const atributosDiv = document.getElementById("atributos")
+          
+          const atributos = firstParagraph.getAttributeNames();
+
+          let listarAtributos = "<ul>";
+          for (let i = 0; i < atributos.length; i++) {
+            listarAtributos +=
+              "<li>" +
+              atributos[i] +
+              ":" +
+              firstParagraph.getAttribute(atributos[i]) +
+              "<li>";
+          }
+          listarAtributos += "</ul>";
+          atributosDiv.innerHTML = listarAtributos;
+        }
 
       </script>
     </head>
     <body onload="main()">
       <h1 id="title">Este é o título da página</h1>
       <section id="section">
-        <p id="firstParagraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-          beatae! Non ratione quae tempore, sequi cupiditate ducimus maxime
-          quam. Voluptatum.
-        </p>
+        <div id="atributos">
+          <p id="firstParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            beatae! Non ratione quae tempore, sequi cupiditate ducimus maxime
+            quam. Voluptatum.
+          </p>
+        </div>
+        <button onclick="listarAtributos()">Listar atrbutos</button>
         <p id="secondParagraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi
           ab voluptatem quaerat dolorem sed quibusdam deleniti ipsa aperiam
@@ -51,7 +72,7 @@
         molestias, amet distinctio repudiandae earum aliquam magni, voluptatem
         itaque!
       </p>
-      <button onclick="DarkMode()">Clicar</button>
+      <button onclick="Darkmode()">Dark Mode</button>
     </body>
   </html>
 </html>
