@@ -29,23 +29,36 @@
         }
         function listarAtributos() {
           const firstParagraph = document.getElementById("firstParagraph");
-          const atributosDiv = document.getElementById("atributos")
-          
-          const atributos = firstParagraph.getAttributeNames();
+          let atributosDiv = document.getElementById("atributosDiv");
 
+
+          if (atributosDiv) {
+            atributosDiv.parentNode.removeChild(atributosDiv);
+            return;
+          }
+
+          atributosDiv = document.createElement("div");
+          atributosDiv.id = "atributosDiv";
+
+          const atributos = firstParagraph.getAttributeNames();
           let listarAtributos = "<ul>";
+
           for (let i = 0; i < atributos.length; i++) {
             listarAtributos +=
               "<li>" +
               atributos[i] +
               ":" +
               firstParagraph.getAttribute(atributos[i]) +
-              "<li>";
+              "</li>";
           }
+
           listarAtributos += "</ul>";
           atributosDiv.innerHTML = listarAtributos;
+          firstParagraph.parentNode.insertBefore(
+            atributosDiv,
+            firstParagraph.nextSibling
+          );
         }
-
       </script>
     </head>
     <body onload="main()">
