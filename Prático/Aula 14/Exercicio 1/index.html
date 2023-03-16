@@ -1,19 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script>
+      function Mudarestado(el) {
+        const display = document.getElementById(el).style.display;
+        if (display == "block")
+          document.getElementById(el).style.display = "none";
+        else document.getElementById(el).style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
     <header>
-        <img src="midia/image 1.png" alt="">
+      <img src="midia/image 1.png" alt="" />
     </header>
     <main>
+      <h1>Perguntas Frequente</h1>
+      <span>
+        <div class="box">
+          <p>Oque é a arnia</p>
+          <button type="button" onclick="Mudarestado('Muda')">Expandir</button>
+          <p id="Muda" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>Qual é a metodologia da Arnia?</p>
+          <button type="button" onclick="Mudarestado('Muda2')">Expandir</button>
+          <p id="Muda2" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>Quais linguagens de programação serão ensinadas?</p>
+          <button type="button" onclick="Mudarestado('Muda3')">Expandir</button>
+          <p id="Muda3" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>A formação é presencial ou online?</p>
+          <button type="button" onclick="Mudarestado('Muda4')">Expandir</button>
+          <p id="Muda4" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>Quais são os pré-requisitos para estudar na Arnia?</p>
+          <button type="button" onclick="Mudarestado('Muda5')">Expandir</button>
+          <p id="Muda5" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>
+            Preciso de algum conhecimento de programação para estudar na Arnia?
+          </p>
+          <button type="button" onclick="Mudarestado('Muda6')">Expandir</button>
+          <p id="Muda6" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>Quais são as datas das próximas turmas da Arnia?</p>
+          <button type="button" onclick="Mudarestado('Muda7')">Expandir</button>
+          <p id="Muda7" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>Como funciona o processo seletivo?</p>
+          <button type="button" onclick="Mudarestado('Muda8')">Expandir</button>
+          <p id="Muda8" class="display">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            optio, quis qui odio quae consectetur ducimus animi voluptas
+            necessitatibus nisi accusamus aspernatur fugiat aperiam accusantium
+            voluptatum blanditiis error. Enim, dolorem?
+          </p>
+        </div>
+      </span>
+      <span>
+        <div class="box">
+          <p>
+            Se por algum motivo eu não quiser continuar estudando na Arnia,
+            tenho que pagar algo?
+          </p>
+          <button type="button" onclick="Mudarestado('Muda9')">Expandir</button>
+          <p id="Muda9" class="display">
+            Caso você mude de ideia e desista do curso em até 15 dias após o início das aulas, você não paga absolutamente nada, sem qualquer tipo de ônus ou dívida. Após os 15 primeiros dias de formação, caso você desista, deverá pagar um valor calculado proporcionalmente com base nos blocos cursados até o momento do desligamento, conforme detalhado nos documentos contratuais que serão apresentados.
 
+          </p>
+        </div>
+      </span>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
