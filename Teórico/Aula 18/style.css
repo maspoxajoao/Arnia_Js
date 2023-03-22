@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#lista-personagens {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  box-sizing: border-box;
+  width: 38.5rem;
+  height:31.1rem;
+  background: #E9E9E9;
+  border: 1px solid #777777;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+h1,
+p {
+  text-align: center;
+  margin-top: 2.1rem;
+  margin-left: 16.2rem;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #1E1E1E;
+}
+
+p {
+  text-align: left;
+  font-size: 18;
+  margin-bottom: 30px;
+}
+
+.imagem {
+  width: 250px;
+  height: 397px;
+  background-image: cover;
+  float: left;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+  margin-top: -30px;
+}
+
+.botao {
+  position: absolute;
+  bottom: 0;
+  height: 3,1rem;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-size: 3rem;
+  font-weight:100;
+  background-color: unset;
+  color: grey;
+}
