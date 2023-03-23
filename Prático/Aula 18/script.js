@@ -1,4 +1,4 @@
-const apiKey = "G3SqP3Zlm3KXYlbNMqldZuiGm6fqAWjv";
+const apiKey = "5ILEQLOApbeoYD3KR22ZJIA8SK50XjIH";
 const baseUrl = "http://dataservice.accuweather.com/";
 
 const searchButton = document.getElementById("search-button");
