@@ -8,7 +8,7 @@ const createPost = async (post) => {
   await fetch("http://localhost:3000/posts", {
     method: "POST",
     headers: {
-      Accept: "application/json, text/plain, */*",
+      "Accept": "application/json, text/plain, */*",
       "Content-Type": "application/json",
     },
     body: JSON.stringify(post),
@@ -26,17 +26,3 @@ const addPost = async () => {
 
   await createPost(post);
 };
-
-const salvarPseudotime = async () => {
-  const time = {
-    nome: "Palmeiras",
-    titulo: -2,
-  };
-
-  await fetch("http://localhost:3000/times", {
-    body: JSON.stringify(time),
-    method: "POST",
-  });
-};
-
-salvarPseudotime();

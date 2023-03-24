@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/style.css" />
+    <script src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="midia/image 1.png" alt="logo arnia" />
+      <h1>Esportes</h1>
+      <button onclick="addPost()">Novo Post</button>
+    </header>
+    <main>
+      <div id="modal">
+        <h1>Novo Post</h1>
+        <form action="">
+          <div id="titulo">
+            Titulo
+            <input type="text" name="txTitulo" id="txTitulo" />
+          </div>
+          <div id="autor">
+            Autor(a)
+            <input type="text" name="txtAutor" id="txtAutor">
+          </div>
+          <div id="img">
+            Imagem de destaque
+            <input type="text" name="txtimg" id="txtimg">
+          </div>
+          <div id="texto">
+            Texto
+            <textarea name="txtArea" id="txtArea" cols="10" rows="5"></textarea>
+          </div>
+            <input id="botao" onclick="addPost()" type="button" value="Salvar">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
