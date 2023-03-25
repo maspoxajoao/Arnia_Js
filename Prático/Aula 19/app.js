@@ -40,3 +40,12 @@ const addPost = async () => {
     </div>
   `;
 };
+
+var openModalBtn = document.getElementById("novoPost");
+var closeBtn = document.getElementsById("xd");
+let modal = document.getElementById("myModal");
+
+const fechar= () => {
+  modal.style.display = "none"
+}
+

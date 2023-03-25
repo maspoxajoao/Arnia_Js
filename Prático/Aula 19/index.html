@@ -12,31 +12,47 @@
     <header>
       <img src="midia/image 1.png" alt="logo arnia" />
       <h1>Esportes</h1>
-      <button onclick="addPost()">Novo Post</button>
+      <button id="novoPost">Novo Post</button>
     </header>
     <main>
-      <div id="modal">
-        <h1>Novo Post</h1>
-        <form action="submit">
-          <div id="titulo">
-            Titulo
-            <input type="text" name="txTitulo" id="txTitulo" />
+      <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          
+          <div class="topo">
+            <h1>Novo Post</h1>
+            <button id="xd" onclick="fechar()" class="close">X</button>
           </div>
-          <div id="autor">
-            Autor(a)
-            <input type="text" name="txtAutor" id="txtAutor">
-          </div>
-          <div id="img">
-            Imagem de destaque
-            <input type="text" name="txtimg" id="txtimg">
-          </div>
-          <div id="texto">
-            Texto
-            <textarea name="txtArea" id="txtArea" cols="10" rows="5"></textarea>
-          </div>
-            <input id="botao" onclick="addPost()" type="button" value="Salvar">
-        </form>
-      </div>
+          <form action="submit">
+            <div id="titulo">
+              Titulo
+              <input type="text" name="txTitulo" id="txTitulo" />
+            </div>
+            <div id="autor">
+              Autor(a)
+              <input type="text" name="txtAutor" id="txtAutor" />
+            </div>
+            <div id="img">
+              Imagem de destaque
+              <input type="text" name="txtimg" id="txtimg" />
+            </div>
+            <div id="texto">
+              Texto
+              <textarea
+                name="txtArea"
+                id="txtArea"
+                cols="10"
+                rows="5"
+              ></textarea>
+            </div>
+            <input
+              id="botao"
+              onclick="addPost()"
+              type="button"
+              value="Salvar"
+            />
+          </form>
+        </div>
       <div id="noticia"></div>
     </main>
   </body>
