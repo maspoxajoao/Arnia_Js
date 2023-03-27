@@ -8,7 +8,7 @@ const createPost = async (post) => {
   await fetch("http://localhost:3000/posts", {
     method: "POST",
     headers: {
-      Accept: "application/json, text/plain, */*",
+      "Accept": "application/json, text/plain, */*",
       "Content-Type": "application/json",
     },
     body: JSON.stringify(post),
@@ -41,11 +41,5 @@ const addPost = async () => {
   `;
 };
 
-var openModalBtn = document.getElementById("novoPost");
-var closeBtn = document.getElementsById("xd");
-let modal = document.getElementById("myModal");
 
-const fechar= () => {
-  modal.style.display = "none"
-}
 
