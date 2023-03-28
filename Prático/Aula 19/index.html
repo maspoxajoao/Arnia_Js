@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -5,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo/style.css" />
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <header>
       <img src="midia/image 1.png" alt="logo arnia" />
       <h1>Esportes</h1>
-      <button id="novoPost">Novo Post</button>
+      <button onclick="abrir()" id="novoPost">Novo Post</button>
     </header>
     <main>
-      <div id="modal">
+      <div id="myModal" class="modal">
+
         <div class="modal-content">
+          
           <div class="topo">
             <h1>Novo Post</h1>
-            <button id="xd" class="close">X</button>
+            <button id="xd" onclick="fechar()" class="close">X</button>
           </div>
           <form action="submit">
             <div id="titulo">
@@ -52,6 +55,7 @@
           </form>
         </div>
       <div id="noticia"></div>
+      
     </main>
   </body>
 </html>
