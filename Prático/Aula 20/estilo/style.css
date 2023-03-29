@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 5rem;
+    background: #6950A1;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>div>img {
+    width: 128px;
+    height: 38px;
+    margin-left: 27px;
+}
+
+
